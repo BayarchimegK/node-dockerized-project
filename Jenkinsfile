@@ -48,7 +48,7 @@ pipeline {
         }
         stage("Test"){
             steps{
-                sh 'pip install npm'
+                sh 'pip3 install npm'
                 sh 'npm test'
             }
         }
