@@ -48,9 +48,6 @@ pipeline {
         }
         stage("Test"){
             steps{
-                sh 'apt-get update'
-                sh 'apt-get upgrade'
-                sh 'apt-get install npm'
                 sh 'npm test'
             }
         }
